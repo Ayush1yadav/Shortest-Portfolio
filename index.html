@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="LOGO2.png">
+    <title>Ayush</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <div id="nav">
+        <img src="LOGO1.png" alt="Logo of My Website" id="logo">
+        <ul type="none" style="display: flex;">
+            <li>
+                <a>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a>
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a>
+                    About
+                </a>
+            </li>
+            <li>
+                <a>
+                    Contact
+                </a>
+            </li>
+                    <img src="moon.png" alt="Dark Button" style="height: 20px; width: 20px; margin-left: 150px; margin-top: 25px;" id="icon">
+        </ul>
+    </div>
+    <div id="banner">
+        <div id="main">
+        <h1>
+            Hi! I'm 
+            <span>
+                Ayush
+            </span>
+            Yadav
+        </h1>
+        <p>
+            I am a 19 year old college student. I am passionate about coding and I am currently<br>
+            learning Python and Java. I am also interested in web development and I am currently<br>
+            learning HTML, CSS and JavaScript.
+        </p>
+        <button>
+            <a>
+                Download CV
+            </a>
+        </button>
+    </div>
+    <div>
+        <img src="back.png" alt="back image" id="back">
+        <img src="front.png" alt="front image" id="front">
+    </div>
+</div>
+    <script>
+        let icon = document.getElementById("icon");
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src="sun.png";
+                    logo.src="LOGO2.png";
+                    back.src="back2.png"
+                }
+                else{
+                    icon.src="moon.png";
+                    logo.src="LOGO1.png";
+                    back.src="back.png"
+                }
+            }
+    </script>
+</body>
+</html>
